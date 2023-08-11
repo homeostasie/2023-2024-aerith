@@ -44,6 +44,16 @@ img: $(FIGOBJ)
 	pdflatex 5x1-calcul-numerique/5x1-ie.tex
 	mv 5x1-ie.pdf '$(PDFDIR)'/5x1-ie.pdf
 
+2cours:
+	pdflatex 5x2-probabilite/5x2-cours.tex
+	pdflatex 5x2-probabilite/5x2-cours.tex
+	mv 5x2-cours.pdf '$(PDFDIR)'/5x2-cours.pdf
+
+2ie:
+	pdflatex 5x2-probabilite/5x2-ie.tex
+	pdflatex 5x2-probabilite/5x2-ie.tex
+	mv 5x2-ie.pdf '$(PDFDIR)'/5x2-ie.pdf
+
 
 # nettoyage		
 proper:
