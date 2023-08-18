@@ -8,6 +8,7 @@
 2. Probabilité
     * Vocabulaire d'intro : hasard mathématique, probabilité, univers, issue, réalisation
     * Expérience de base : pièce et dés
+    * DM : murphy ? Monty Hall ?
 
 3. Nombre relatif 1
     * Exemples
@@ -20,7 +21,8 @@
   
 5. Fraction 1
     * Vocabulaire
-    * Définition : 1/3 est le nombre qui multiplié par 3 donne 1  
+    * Définition : 1/3 est le nombre qui multiplié par 3 donne 1 
+    * Fractions égales 
 
 6. Triangles 1 
     * La somme des angles dans un triangle fait 180°
@@ -71,6 +73,7 @@
 
 17. Triangles 2
     * Inégalité triangulaire
+  
 18. Arithmétique
     * Multiples
     * Diviseurs
