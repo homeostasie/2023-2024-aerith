@@ -74,6 +74,17 @@ img: $(FIGOBJ)
 	pdflatex 5x4-symetrie-centrale-1-quadrillage/5x4-ie.tex
 	mv 5x4-ie.pdf '$(PDFDIR)'/5x4-ie.pdf	
 
+
+5cours:
+	pdflatex 5x5-fractions-1-intro/5x5-cours.tex
+	pdflatex 5x5-fractions-1-intro/5x5-cours.tex
+	mv 5x5-cours.pdf '$(PDFDIR)'/5x5-cours.pdf
+
+5ie:
+	pdflatex 5x5-fractions-1-intro/5x5-ie.tex
+	pdflatex 5x5-fractions-1-intro/5x5-ie.tex
+	mv 5x5-ie.pdf '$(PDFDIR)'/5x5-ie.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
