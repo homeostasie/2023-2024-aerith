@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 5x3-nombres-relatifs-1-intro/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x5-triangles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe)
+FIGSRC = $(wildcard 5x3-nombres-relatifs-1-intro/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x6-triangles-1-angles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -25,7 +25,7 @@ img: $(FIGOBJ)
 5x4-symetrie-centrale-1-quadrillage/%.pdf: 5x4-symetrie-centrale-1-quadrillage/%.ipe
 	ipetoipe -pdf $<
 
-5x5-triangles/%.pdf: 5x5-triangles/%.ipe
+5x6-triangles-1-angles/%.pdf: 5x6-triangles-1-angles/%.ipe
 	ipetoipe -pdf $<
 
 5x8-aires/%.pdf: 5x8-aires/%.ipe
@@ -84,6 +84,16 @@ img: $(FIGOBJ)
 	pdflatex 5x5-fractions-1-intro/5x5-ie.tex
 	pdflatex 5x5-fractions-1-intro/5x5-ie.tex
 	mv 5x5-ie.pdf '$(PDFDIR)'/5x5-ie.pdf
+
+6cours:
+	pdflatex 5x6-triangles-1-angles/5x6-cours.tex
+	pdflatex 5x6-triangles-1-angles/5x6-cours.tex
+	mv 5x6-cours.pdf '$(PDFDIR)'/5x6-cours.pdf
+
+6ie:
+	pdflatex 5x6-triangles-1-angles/5x6-ie.tex
+	pdflatex 5x6-triangles-1-angles/5x6-ie.tex
+	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf
 
 # nettoyage		
 proper:
