@@ -96,9 +96,14 @@ img: $(FIGOBJ)
 	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf
 
 7cours:
-	pdflatex 5x7-proportionnallite/5x7-cours.tex
-	pdflatex 5x7-proportionnallite/5x7-cours.tex
+	pdflatex 5x7-proportionnalite/5x7-cours.tex
+	pdflatex 5x7-proportionnalite/5x7-cours.tex
 	mv 5x7-cours.pdf '$(PDFDIR)'/5x7-cours.pdf
+
+7ie:
+	pdflatex 5x7-proportionnalite/5x7-ie.tex
+	pdflatex 5x7-proportionnalite/5x7-ie.tex
+	mv 5x7-ie.pdf '$(PDFDIR)'/5x7-ie.pdf
 
 # nettoyage		
 proper:
