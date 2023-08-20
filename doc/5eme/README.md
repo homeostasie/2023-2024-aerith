@@ -1,6 +1,5 @@
 # Progression - 5è
 
-
 1. Calcul numérique
     * Usage de la calculatrice
     * Priorités de calcul
@@ -8,7 +7,6 @@
 2. Probabilité
     * Vocabulaire d'intro : hasard mathématique, probabilité, univers, issue, réalisation
     * Expérience de base : pièce et dés
-    * DM : murphy ? Monty Hall ?
 
 3. Nombre relatif 1
     * Exemples
@@ -35,7 +33,7 @@
     * Vocabulaire
     * Placer des points
     * Bataille navale
-    *  
+   
 9. Fractions - 2
     * Additions
   
@@ -48,7 +46,7 @@
     * Multiplications
     * Additions
     * Soustractions
-    * 
+     
 12. Calcul Littéral
     * Introduction
     * Vocabulaire : x est inconnu et solution
@@ -93,7 +91,6 @@
 ## Contributeur
 
 * - **LAFOND Thomas - thomas.lafond@ac-lyon.fr / thom@homeostasie.eu**
-
 
 ## Licence
 
