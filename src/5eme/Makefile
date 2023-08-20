@@ -95,6 +95,11 @@ img: $(FIGOBJ)
 	pdflatex 5x6-triangles-1-angles/5x6-ie.tex
 	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf
 
+7cours:
+	pdflatex 5x7-proportionnallite/5x7-cours.tex
+	pdflatex 5x7-proportionnallite/5x7-cours.tex
+	mv 5x7-cours.pdf '$(PDFDIR)'/5x7-cours.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
