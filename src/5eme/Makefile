@@ -13,13 +13,16 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 5x3-nombres-relatifs-1-intro/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x6-triangles-1-angles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe)
+FIGSRC = $(wildcard 5x1-calcul-numerique/*.ipe 5x3-nombres-relatifs-1-intro/*.ipe 5x4-symetrie-centrale-1-quadrillage/*.ipe 5x6-triangles-1-angles/*.ipe 4xbb/*.ipe 5x8-aires/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-5x3-nombres-relatifs-1-intro//%.pdf: 5x3-nombres-relatifs-1-intro//%.ipe
+5x1-calcul-numerique/%.pdf: 5x1-calcul-numerique/%.ipe
+	ipetoipe -pdf $<
+
+5x3-nombres-relatifs-1-intro/%.pdf: 5x3-nombres-relatifs-1-intro/%.ipe
 	ipetoipe -pdf $<
 
 5x4-symetrie-centrale-1-quadrillage/%.pdf: 5x4-symetrie-centrale-1-quadrillage/%.ipe
