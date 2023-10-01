@@ -15,9 +15,11 @@
 Chaque pièce n'a que 2 côtés : Pile (\textbf{P}) et Face (\textbf{F}).
 
 \begin{enumerate}
-  \item[1a.] On jette 2 pièces. Écrire toutes les possibilités. \\\Pointilles[1]
-  \item[1b.] On jette 3 pièces. Écrire toutes les possibilités. \\\Pointilles[3]
-  \item[1c.] Je viens de faire 3 fois Pile en jetant ma pièce. Je la jette à nouveau. Quelle est la probabilité de faire à nouveau Pile ? \dotfill
+  \item[1.] On jette 2 pièces. Quels sont tous les cas possibles ? \\\Pointilles[2]
+  \item[2a.] On jette 3 pièces. Quels sont tous les cas possibles ? \\\Pointilles[3]
+  \item[2b.] Quelle est la probabilité de faire PPP ?  \\\Pointilles[2]
+  \item[2c.] Je viens de faire 2 fois Pile en jetant les deux premières pièces. Je jette une pièce à nouveau. Quelle est la probabilité de faire à nouveau Pile ? \\\Pointilles[1]
+  \item[B.] Je jette 11 pièces. Quelle est la taille de l'univers ? \\\Pointilles[2]
 \end{enumerate}  
 
 \textbf{Ex2 - Dé}
@@ -25,28 +27,33 @@ Chaque pièce n'a que 2 côtés : Pile (\textbf{P}) et Face (\textbf{F}).
 On a un dé équilibré à 6 faces : 1, 1, 2, 2, 3, 4.
 
 \begin{enumerate}
-  \item[2a.] Quel est l'univers ? \dotfill
-  \item[2b.] Quels sont les probabilités associées à chaque issue ? \\ \Pointilles[2]
+  \item[1.] Quels sont tous les cas possibles ? \\ \Pointilles[2]
+  \item[2.] Quelles sont les probabilités associées à chaque issue ? \\ \Pointilles[2]
 \end{enumerate}  
 
+\newpage
 
 \textbf{pb1 - 2 Dés}
 
 \begin{multicols}{2}\noindent
-  On a deux dés à 6 faces numérotés 1, 2, 3, 4, 5 et 6.
-   
-  \textbf{On additionne les deux faces.} 
+  On a deux dés à 6 faces numérotés : 
+  \begin{itemize}[label={$\bullet$}]
+    \item 1, 2, 2, 3, 3 et 6
+    \item 1, 1, 4, 4, 5 et 6
+  \end{itemize}
+
+  \textbf{On conserve uniquement le dé le plus petit.} 
   \begin{enumerate}
-    \item[3a.] Remplir le tableau des réalisations.
-    \item[3b.] Décrire l'univers ? 
+    \item[1.] Remplir le tableau des réalisations.
+    \item[2.] Quels sont tous les cas possibles ? 
   \end{enumerate}  
   \columnbreak 
   
   \begin{center}\begin{tabular}{|c|c|c|c|c|c|c|} \hline
-    dés & 1 & 2 & 3 & 4 & 5 & 6 \\  \hline
+    dés & 1 & 2 & 2 & 3 & 3 & 6 \\  \hline
       1 &   &   &   &   &   &   \\  \hline
-      2 &   &   &   &   &   &   \\  \hline
-      3 &   &   &   &   &   &   \\  \hline
+      1 &   &   &   &   &   &   \\  \hline
+      4 &   &   &   &   &   &   \\  \hline
       4 &   &   &   &   &   &   \\  \hline
       5 &   &   &   &   &   &   \\  \hline
       6 &   &   &   &   &   &   \\  \hline
@@ -54,10 +61,32 @@ On a un dé équilibré à 6 faces : 1, 1, 2, 2, 3, 4.
   
   \end{multicols}
   
-  \Pointilles[2] 
+  \Pointilles[3] 
   \begin{enumerate}
-    \item[3c.] Quelle est la probabilité de faire 6 ? \\ \Pointilles[2] 
-    \item[3d.] Quelle nombre à le plus de chance de sortir ? \\ \Pointilles[2]  
+    \item[3.] Quelles sont les probabilités associées à chaque issue ? \\ \Pointilles[6]
+    \item[4.] Quelle est la probabilité d'obtenir plus ou égal à 3 ?\\ \Pointilles[3]  
   \end{enumerate}  
 
+
+  \textbf{pb2 - Dé et Urnes}
+
+  On a un dé équilibrés à 6 faces : 1, 1, 6, 6, 6, 6. On lance le dé. 
+  
+  \begin{multicols}{2}\noindent
+  \begin{itemize}[label={$\bullet$}]
+    \item Si on obtient 1 avec le dé, on pioche une balle dans l'urne rouge.
+    Urne rouge : 14 balles rouges et 10 balles noires.
+  
+    \item Si on obtient 6 avec le dé, on pioche une balle dans l'urne verte.
+    Urne verte : 8 balles vertes et 12 balles noires.
+  \end{itemize}
+  \end{multicols}
+  
+  \begin{enumerate}
+    \item[1.] On fait 6 avec le dé. Quelle est la probabilité de piocher une balle noire ? \\ \Pointilles[3] 
+    \item[2.] Quel est la probabilité de piocher dans l'urne verte ? \\ \Pointilles[3] 
+    \item[3.] On sait que la probabilité de piocher une balle noire est $\dfrac{2}{6} \times \dfrac{10}{24} + \dfrac{4}{6} \times \dfrac{12}{20}$. \\
+    Calculer cette probabilité. A-t-on plus d'une chance sur deux de tirer une balle noire ? \\ \Pointilles[3] 
+  \end{enumerate}
+  
 \end{document}
