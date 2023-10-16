@@ -38,6 +38,19 @@ img: $(FIGOBJ)
 	mv 4x1-ie.pdf '$(PDFDIR)'/4x1-ie-relatifs.pdf
 
 
+2data:
+	pdflatex 4x2-graphiques/4x2-data-perso.tex
+	pdflatex 4x2-graphiques/4x2-data-perso.tex
+	mv 4x2-data-perso.pdf '$(PDFDIR)'/4x2-data-perso.pdf
+	pdflatex 4x2-graphiques/4x2-data-temperature.tex
+	pdflatex 4x2-graphiques/4x2-data-temperature.tex
+	mv 4x2-data-temperature.pdf '$(PDFDIR)'/4x2-data-temperature.pdf
+
+3ie:
+	pdflatex 4x3-proportionnalite/4x3-ie.tex
+	pdflatex 4x3-proportionnalite/4x3-ie.tex
+	mv 4x3-ie.pdf '$(PDFDIR)'/4x3-ie-prop.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
