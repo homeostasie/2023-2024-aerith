@@ -1,0 +1,168 @@
+\input{../doc-class-bb.tex}
+
+
+\begin{document}
+
+
+\begin{center} % Center everything on the page
+
+\textsc{\LARGE Collège Faubert}\\
+
+\horrule{2px}
+
+\textsc{\large Devoir Commun}\\% Title of your document
+\textsc{\large Mathématiques}\\% Title of your document
+\textsc{\large 13 Novembre 2023}\\
+
+\horrule{2px}
+
+\begin{itemize}[label={$\bullet$}]
+  \item \textsc{Exercice 1} - 15 points     
+  \item \textsc{Exercice 2} - 10 points 
+  \item \textsc{Exercice 3} - 14 points 
+  \item \textsc{Exercice 4} - 11 points 
+\end{itemize}
+
+\horrule{1px}
+
+\begin{itemize}
+  \item L'usage de la calculatrice de type collège est autorisé.
+  \item L'usage de tout autre document est interdit. 
+\end{itemize}
+
+\horrule{2px}
+
+\end{center} 
+
+
+\subsection*{Exercice 1 - 15 points}
+
+\parbox{0.55\linewidth}{Sur le dessin ci-contre : 
+\begin{itemize}[label={$\bullet$}]
+    \item Les points A, B et E sont alignés, et C le milieu de [BD].
+    \item AC = 5cm, AB = 4cm, CD = 3cm et BE = 7cm.
+  \end{itemize}
+
+  \vspace{0.5cm}
+
+\begin{enumerate}
+    \item Quelle est la nature du triangle ABC ? Justifier. \\
+    \item En déduire la nature du triangle BDE. \\
+    \item Calculer ED. Arrondir le résultat au dixième. 
+\end{enumerate}}\hfill
+\parbox{0.42\linewidth}{\psset{unit=0.8cm}
+\begin{pspicture}(6.25,4)
+    \pspolygon(2.4,1.8)(0.4,0.3)(2.4,0.3)(2.4,3.3)(6,0.3)(2.4,0.3)%CABDE
+    \uput[l](2.4,2.55){3cm}\uput[ul](1.6,1){5cm}\uput[d](1.4,0.3){4cm}
+    \uput[d](4.6,0.3){7cm}
+    \psdots(2.4,1.8)(0.4,0.3)(2.4,0.3)(2.4,3.3)(6,0.3)(2.4,0.3)
+    \uput[dl](0.4,0.3){A} \uput[d](2.4,0.3){B} \uput[ul](2.4,1.8){C} \uput[u](2.4,3.3){D} \uput[dr](6,0.3){E} 
+\end{pspicture}}
+
+\medskip
+
+\subsection*{Exercice 2 - 10 points}
+
+\medskip
+
+\begin{enumerate}
+    \item Calculer $5x^2 - 3(2x+1)$ pour $x = 4$. \\
+    \item Montrer que, pour toute valeur de $x$, on a: $5x^2 - 3(2x + 1) = 5x^2 - 6x - 3$. \\
+    \item Trouver la valeur de $x$ pour laquelle $5x^2 - 3(2x+1)= 5x^2 - 4x +1$.
+\end{enumerate}
+
+\medskip
+
+\subsection*{Exercice 3 - 14 points}
+
+\medskip
+
+On considère le programme de calcul ci-dessous :
+
+\parbox{0.35\linewidth}{
+\fbox{\begin{minipage}{0.35\textwidth}
+\begin{itemize}[label={$\bullet$}]
+    \item choisir un nombre de départ
+    \item multiplier ce nombre par $(- 2)$
+    \item ajouter $5$ au produit
+    \item multiplier le résultat par $5$
+    \item écrire le résultat obtenu.
+\end{itemize}\end{minipage}}
+}
+\hfill
+\parbox{0.64\linewidth}{
+\begin{enumerate}
+    \item 
+        \begin{enumerate}
+            \item Vérifier que, lorsque le nombre de départ est $2$, on obtient $5$. 
+            \item Lorsque le nombre de départ est $3$, quel résultat obtient-on ? \\
+        \end{enumerate}
+    \item Quel nombre faut-il choisir au départ pour que le résultat soit $0$ ? \\
+    \item Arthur prétend que, pour n'importe quel nombre de départ $x$, l'expression $(x - 5)^2 - x^2$ permet d'obtenir le résultat du programme de calcul.
+        
+    A-t-il raison ?
+\end{enumerate}}
+
+\newpage
+
+\subsection*{Exercice 4 - 11 points}
+
+\medskip
+
+Une entreprise rembourse à ses employés le coût de leurs déplacements professionnels, quand les employés utilisent leur véhicule personnel.\\
+
+Pour calculer le montant de ces remboursements, elle utilise la formule et le tableau d'équivalence ci-dessous proposés par le gestionnaire:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|p{5cm}|X|}\hline
+\multicolumn{2}{|c|}{\textbf{Document 1}}\\
+Formule 		&Tableau\\
+Montant du remboursement:
+
+\qquad $a + b\times d$
+
+où :
+
+$\bullet~~$ $a$ est un prix (en euros) qui ne dépend que de la longueur du trajet;
+
+$\bullet~~$ $b$ est le prix payé (en euros) par kilomètre parcouru;
+
+$\bullet~~$ $d$ est la longueur en kilomètres du \og trajet aller \fg.&
+\begin{tabular}{|m{3cm}|c| c|}\hline
+%\begin{tabularx}{\linewidth}{|m{3cm}|*{2}{>{\centering \arraybackslash}X|}}\hline
+Longueur $d$ du \og trajet aller\fg	&Prix $a$&Prix $b$ par kilomètre\\ \hline
+ De 1 km à 16 km						&\np{0,7781}		&\np{0,1944}\\ \hline
+ De 17 km à 32 km 						&\np{0,2503}		&\np{0,2165}\\ \hline
+ De 33 km à 64 km 						&\np{2,0706}		&\np{0,1597}\\ \hline
+ De 65 km à 109 km 						&\np{2,8891}		&\np{0,1489}\\ \hline
+ De 110 km à 149 km 					&\np{4,0864}		&\np{0,1425}\\ \hline
+ De 150 km à 199 km 					&\np{8,0871}		&\np{0,1193}\\ \hline
+ De 200 km à 300 km 					&\np{7,7577}		&\np{0,1209}\\ \hline
+ De 301 km à 499 km 					&\np{13,6514}	&\np{0,1030}\\ \hline
+ De 500 km à 799 km 					&\np{18,4449}	&\np{0,0921}\\ \hline
+ De 800 km à \np{9999}~km				&\np{32,2041}	&\np{0,0755}\\ \hline
+\end{tabular} \\ \hline
+\end{tabularx}
+\end{center}
+\medskip
+
+\begin{enumerate}
+\item Pour un \og trajet aller\fg{} de 30~km, vérifier que le montant du remboursement est environ $6,75$~\euro. \\
+\item  Dans le cadre de son travail, un employé de cette entreprise effectue un déplacement à Paris. Il choisit de prendre sa voiture et il trouve les informations ci-dessous sur un site internet.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|X|}\hline
+\multicolumn{1}{|c|}{\textbf{Document 2}}\\
+Distance Nantes - Paris : 386 km\\
+Coût du péage entre Nantes et Paris: 37~\euro\\
+Consommation moyenne de la voiture de l'employé: $6,2$ litres d'essence aux $100$~km\\
+Prix du litre d'essence: 1,52~\euro\\\hline
+\end{tabularx}
+\end{center}
+
+\textbf{À l'aide des documents 1 et 2, répondre à la question suivante:} \\
+
+\og Le montant du remboursement sera-t-il suffisant pour couvrir les dépenses de cet employé pour effectuer le \og trajet aller\fg{} de Nantes à Paris ? \fg
+\end{enumerate}
+
+\end{document}
