@@ -108,6 +108,12 @@ img: $(FIGOBJ)
 	pdflatex 5x7-proportionnalite/5x7-ie.tex
 	mv 5x7-ie.pdf '$(PDFDIR)'/5x7-ie.pdf
 
+
+12exo1:
+	pdflatex 5x12-calcul-litteral/5x12-exo1.tex
+	pdflatex 5x12-calcul-litteral/5x12-exo1.tex
+	mv 5x12-exo1.pdf '$(PDFDIR)'/5x12-exo1.pdf	
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
