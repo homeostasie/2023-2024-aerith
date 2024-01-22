@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x3-triangles-semblables/*.ipe 4x5-pythagore/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x10-trigonometrie/*.ipe)
+FIGSRC = $(wildcard 4x3-triangles-semblables/*.ipe 4x7-pythagore-1/*.ipe 4x8-pythagore-2/*.ipe 4xbb/*.ipe 4x10-trigonometrie/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -22,7 +22,7 @@ img: $(FIGOBJ)
 4x3-triangles-semblables/%.pdf: 4x3-triangles-semblables/%.ipe
 	ipetoipe -pdf $<
 
-4x5-pythagore/%.pdf: 4x5-pythagore/%.ipe
+4x7-pythagore/%.pdf: 4x5-pythagore/%.ipe
 	ipetoipe -pdf $<
 
 4x8-pythagore-2/%.pdf: 4x8-pythagore-2/%.ipe
@@ -50,6 +50,17 @@ img: $(FIGOBJ)
 	pdflatex 4x3-proportionnalite/4x3-ie.tex
 	pdflatex 4x3-proportionnalite/4x3-ie.tex
 	mv 4x3-ie.pdf '$(PDFDIR)'/4x3-ie-prop.pdf
+
+6ie:
+	pdflatex 4x6-notation-scientifique/4x6-ie.tex
+	pdflatex 4x6-notation-scientifique/4x6-ie.tex
+	mv 4x6-ie.pdf '$(PDFDIR)'/4x6-ie-sci.pdf	
+
+
+7dm:
+	pdflatex 4x7-pythagore-1/4x7-dm.tex
+	pdflatex 4x7-pythagore-1/4x7-dm.tex
+	mv 4x7-dm.pdf '$(PDFDIR)'/4x7-dm-pytha.pdf	
 
 # nettoyage		
 proper:
