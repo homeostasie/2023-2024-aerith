@@ -93,10 +93,10 @@ img: $(FIGOBJ)
 	pdflatex 5x6-triangles-1-angles/5x6-cours.tex
 	mv 5x6-cours.pdf '$(PDFDIR)'/5x6-cours.pdf
 
-6ie:
-	pdflatex 5x6-triangles-1-angles/5x6-ie.tex
-	pdflatex 5x6-triangles-1-angles/5x6-ie.tex
-	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf
+6dm:
+	pdflatex 5x6-triangles-1-angles/5x6-dm.tex
+	pdflatex 5x6-triangles-1-angles/5x6-dm.tex
+	mv 5x6-dm.pdf '$(PDFDIR)'/5x6-dm.pdf
 
 7cours:
 	pdflatex 5x7-proportionnalite/5x7-cours.tex
@@ -112,7 +112,12 @@ img: $(FIGOBJ)
 12exo1:
 	pdflatex 5x12-calcul-litteral/5x12-exo1.tex
 	pdflatex 5x12-calcul-litteral/5x12-exo1.tex
-	mv 5x12-exo1.pdf '$(PDFDIR)'/5x12-exo1.pdf	
+	mv 5x12-exo1.pdf '$(PDFDIR)'/5x12-exo1.pdf
+
+12ie:
+	pdflatex 5x12-calcul-litteral/5x12-ie.tex
+	pdflatex 5x12-calcul-litteral/5x12-ie.tex
+	mv 5x12-ie.pdf '$(PDFDIR)'/5x12-ie.pdf		
 
 # nettoyage		
 proper:
